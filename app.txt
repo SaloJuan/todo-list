@@ -1,0 +1,17 @@
+1) menu va a estar listado los proyectos existentes.
+
+2) entrar en cada proyecto va a salir de esa vista y va a mostrar las tareas del proyecto elegido directamente.
+    -un DOMelement.remove podria solucionarlo
+3) ingresar en cada boton de proyecto va a modificar el DOM desde JS, se esperan fn complejas.
+
+4) cada proyecto es un objeto y en las propiedades deberia encontrarse almacenadas las tareas y sus propiedades correspondientes.
+    - Va a quedar un array 2D, Object[property[property]]
+
+
+5) Si usas el boton de main menu te va a mostrar la pantalla original. Esto podria hacerse con un sencillo container.appendchild(loBorrado);
+Los onbnjetos deberian guardarse cosa de que si entro a un proyecto, salgo y vuelvo a entra,r la info persista.
+    -Un boton de guardar para que la info se almacene en los objetos, etc
+
+
+
+variable global que controle si está el menu principal o no
