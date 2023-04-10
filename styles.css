@@ -42,15 +42,37 @@ aside{
 /*proyectos*/
 
 .project-one{
-
+    margin: 10px;
+    
+    border: red 1px solid;
     display:grid;
-    grid-template-columns: 5% 95%;
+    grid-template-rows: 30px auto;
 
 }
 
 .task-info{
     margin-right:10px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    
+
+
 }
 
 
+.complete-task-btn{
 
+    background:hwb(116 18% 32%);
+    color:white;
+    border-radius: 10px;
+    margin-left:10px;
+
+}
+
+.delete-task-btn{
+
+    background:hwb(0 28% 7%);
+    color:white;
+    border-radius: 10px;
+
+}
