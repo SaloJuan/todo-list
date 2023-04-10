@@ -39,4 +39,18 @@ aside{
 
 }
 
+/*proyectos*/
+
+.project-one{
+
+    display:grid;
+    grid-template-columns: 5% 95%;
+
+}
+
+.task-info{
+    margin-right:10px;
+}
+
+
 
