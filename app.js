@@ -1,4 +1,4 @@
-import {projectOneInfo, projectOneMethods} from './project-one.js'
+//import {projectOneInfo, projectOneMethods} from './project-one.js'
 
 let projOneBtn = document.querySelector('.project-one-btn');
 let projTwoBtn = document.querySelector('.project-two-btn');
@@ -25,11 +25,13 @@ projOneBtn.addEventListener('click', (event) =>{
     </div>
 
     <div class="task-content">
-        INFORMACION DE LA TAREA, DESDE EL HTML DE UNA TAREA
+       testasd testasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasdtestasd testasd testasdtestasd testasd testasd
 
     </div>
 
 </div>
+<button class="complete-task-btn">Mark as Complete</button>
+<button class="delete-task-btn">Delete task</button>
 `
     
 
