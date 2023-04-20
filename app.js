@@ -1,51 +1,78 @@
-//import {projectOneInfo, projectOneMethods} from './project-one.js'
+import {ProjectOne} from './projects-storage.js'
 
-let projOneBtn = document.querySelector('.project-one-btn');
-let projTwoBtn = document.querySelector('.project-two-btn');
-//let projThreeBtn = document.querySelector('.project-three-btn');
-//let projFourBtn = document.querySelector('.project-four-btn');
+let projsBtns = document.querySelectorAll('.project-btn');
+let newProjBtn = document.querySelector('.new-project-btn');
+let viewProjsBtn = document.querySelector('.project-all-btn');
 
+
+let asideBar = document.querySelector('aside');
 let taskViewer = document.querySelector('.task-viewer');
 
+let globalProjCounter = 2;
 
-projOneBtn.addEventListener('click', (event) =>{
+
+projsBtns.forEach((btn) =>{    
+
+    btn.addEventListener('click', (event) =>{       
     
-    //aca habria que validar primero, siempre, que si ya hay un proyecto en pantala, que lo elimine.
-
-    //var obj1 = projectOneInfo(task)
-
-    taskViewer.innerHTML +=
-`
- 
-<div class="project-one">
+        taskViewer.innerHTML +=
+    ` 
+        <div class="project-one">
+            
+            <div class="task-info">
+                <div class="id">ID: ${ProjectOne.projId}</div>
+                <div class="due-date">Due Date: ${ProjectOne.projDueDate}</div>  
+            </div>
     
-    <div class="task-info">
-        <div class="id">ID: 01</div>
-        <div class="due-date">Due Date: 10/04/2023</div>  
-    </div>
+            <textarea class="task-content"> ${ProjectOne.taskInfo}
+            </textarea>
+    
+        </div>
+        <button class="complete-task-btn">Mark as Complete</button>
+        <button class="delete-task-btn">Delete task</button>
+        
+        <button class="save-task-btn"> Save task</button>
+        <button class="close-task-btn"> close Task</button>
 
-    <div class="task-content">
-       testasd testasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtestasd testasd testasdtesttasd testasd testasdtestasd testasd testasdtestasd testasd testasd
+    `     
 
-    </div>
+        if(firstEach){
+            let saveTaskBtn = document.querySelector('.save-task-btn');
 
-</div>
-<button class="complete-task-btn">Mark as Complete</button>
-<button class="delete-task-btn">Delete task</button>
-`
+            saveTaskBtn.addEventListener('click', (e) =>{
+
+                let taskNewDueDate = document.querySelector('.project-one  .task-info  .id');
+                let taskInfo = document.querySelector('.project-one .task-content');
+
+                console.log(taskNewDueDate.innerHTML);
+                console.log(taskInfo.value);       
+
+                
+
+                
+                
+                console.log(ProjectOne.projId + ' ' + ProjectOne.taskInfo);           
+                
+                
+            })
+        }
+
+        
     
 
+        
+    })
+        
 
 })
 
-/*
--   para los 4 primeros proyectos (reducir a 2 probablemente) añadir informacion a mano como para ver como seria. Para cuando cree un boton "crear nuevo projecto".
-
--habria que diseñar tambien como va a ser cada tarea, una vez elegido el project
 
 
--   tener un 'project-info' archivo para cada project. Quizás, si se agregan mas de 4 proyectos, hacer el primer paso en otra fn para automatizarlo, sino idear otra similaridad
--   al agregar el project al taskviewer, que renderice (desde otro archivo) la info del objeto y los botones adicionales como el de volver a main menu por ejemplo
- 
+newProjBtn.addEventListener('click', (e) =>{
 
-*/
+    //ver bien esto ,pero cada task nueva tiene que generar un nuevo numero de ID al ser creada
+
+    console.log('prueba new proj btn');  
+       
+})
+

@@ -21,10 +21,7 @@ aside{
     height: 100%;
 }
 
-.project-one-btn,
-.project-two-btn,
-.project-three-btn,
-.project-four-btn{
+.project-btn{
     
     background:hsl(0, 80%, 50%);
     color:white;
@@ -75,4 +72,11 @@ aside{
     color:white;
     border-radius: 10px;
 
+}
+
+.save-task-btn{
+    margin-left:60%;
+}
+.close-task-btn{
+    margin-left:73%;
 }
