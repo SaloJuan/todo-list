@@ -15,6 +15,11 @@ body{ width: 100vw; height:100vh}
     height:100%;
 }
 
+.app-icon{
+    width: 100px;
+    height: 100px;
+}
+
 aside{
     background:hsl(240, 75%, 60%);
     width: 100%;
@@ -40,6 +45,7 @@ aside{
 
 .project-one{
     margin: 10px;
+    height: 100px;
     
     border: red 1px solid;
     display:grid;

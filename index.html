@@ -8,7 +8,7 @@
     <title>Todo-list</title>
     <link rel="stylesheet" href="./styles.css">
     <script type="module" defer src="./app.js"></script>
-    <script defer type="module" src="./project-storage.js"></script>
+    <script defer type="module" src="./projects-storage.js"></script>
 
 
 </head>
@@ -18,21 +18,31 @@
 
         <aside class="aside-bar"> 
             
-            <h1>BARRA lateral donde iran los proyectos</h1>
+            <img class="app-icon" src="./assets/icon.png"></img>
 
-            <button class="project-btn"> Proyecto 1</button>
-            <button class="project-btn"> Proyecto 2</button>
-            
+            <div class="project-btns-container">
+
+                <button class="project-btn" id="1">Proyecto 1</button>
+                <button class="project-btn" id="2">Proyecto 2</button>
+                
+                
+
+            </div>
 
             <button class="new-project-btn">Add blank project</button>
 
-            <button class="project-all-btn"> View All Projects</button>
+            <button class="project-all-btn">View All Projects</button>
+            
+            <button class="add-new-task-btn">New Task</button>
+
+            <button class="delete-proj-btn">Delete Project</button>
+
+
+            
 
         </aside>
 
-        <div class="task-viewer">
-
-            acá se van a ver las tareas de cada proyecto
+        <div class="task-viewer">            
 
         </div>
         

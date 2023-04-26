@@ -1,3 +1,22 @@
--que haya un boton que permita agregar un nuevo proyecto en blanco
+-boton para añadir una nueva tarea.
+    -Esta nueva tarea va a promptearle al usuario el nombre
+    -esta nueva tarea se av a guardar en el proyecto que este elegido.
+        -cuadro de confirmacion para que se guarde allí.
+
+
+-boton new task:
+    -que primeros e seleccionme 1 project
+    -que pida titulo y duedate de la tarea
+    -que agrege el ID automticamente
+ 
+
+
+-al agregar tareas al taskviewer, podria hacer los igueinte:
+    -valida el project
+    -va a buscarlo al tasks.html
+    -lo appendchildea ne lugar de añadir como innerHTML
+
+
+
 
 
